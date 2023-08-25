@@ -16,7 +16,7 @@ const Ebook = () => {
             completo para cuidar daqueles que um dia cuidaram de nós.
           </p>
           <a
-            href="https://pay.kiwify.com.br/PNuxEgb"
+            href="https://pay.kiwify.com.br/bepy0xO"
             target="_blank"
             rel="noreferrer"
           >

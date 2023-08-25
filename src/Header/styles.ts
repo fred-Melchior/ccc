@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { Colors } from '../styles'
+import { Colors, Media } from '../styles'
 
 export const HeaderContainer = styled.div`
   background-color: ${Colors.black};
@@ -13,6 +13,18 @@ export const HeaderContainer = styled.div`
     img {
       width: 96px;
       height: 96px;
+    }
+  }
+
+  @media (max-width: ${Media.tablet}) {
+    div {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: ${Media.mobile}) {
+    div {
+      justify-content: center;
     }
   }
 `

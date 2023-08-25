@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { Colors } from '../styles'
+import { Colors, Media } from '../styles'
 
 export const PostContainer = styled.div`
   padding: 40px 0;
@@ -9,6 +9,20 @@ export const PostContainer = styled.div`
   .container {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width: ${Media.tablet}) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: ${Media.mobile}) {
+    padding: 8px 0;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `
 
@@ -47,6 +61,30 @@ export const CardPost = styled.div`
 
     &:hover {
       border: 2px solid ${Colors.white};
+    }
+  }
+
+  @media (max-width: ${Media.tablet}) {
+    width: 200px;
+
+    img {
+      height: 190px;
+      width: 190px;
+    }
+  }
+
+  @media (max-width: ${Media.mobile}) {
+    padding: 16px;
+    width: 100%;
+
+    img {
+      height: 240px;
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    button {
+      font-size: 24px;
     }
   }
 `
